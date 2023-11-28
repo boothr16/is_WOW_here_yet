@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">No</div>
+    <script>
+        var currentDate=new Date();
+        var targetDate=new Date("November 30, 2023");
+        if (currentDate>=targetDate)
+            document.getElementById("content").innerText="Yes";
+    </script>
+</body>
+</html>
