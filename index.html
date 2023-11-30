@@ -16,10 +16,13 @@
 <body>
     <div id="content">No</div>
     <script>
-        var currentDate=new Date();
-        var targetDate=new Date("November 30, 2023 21:00:00");
-        if (currentDate>=targetDate)
-            document.getElementById("content").innerText="Yes";
+        window.onload=function()
+        {
+            var currentDate=new Date();
+            var targetDate=new Date("November 30, 2023 13:00:00");
+            if (currentDate>=targetDate)
+                document.getElementById("content").innerText="Yes";
+        };
     </script>
 </body>
 </html>
